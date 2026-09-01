@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <form id="form-Formulario">
+
+        <h1 align="center">Seu Formulário</h1>
+
+        <hr>
+
+        <input type="text" name="nome" placeholder="Seu nome:">
+
+        <br><br>
+
+        <input type="email" name="email" placeholder="Seu email:">
+
+        <br><br>
+
+        <input type="password" name="senha" placeholder="Sua Senha:">
+
+        <br><br>
+
+        <input type="number" name="idade" placeholder="Sua Idade:">
+
+        <br><br>
+
+        <input type="date" name="nascimento">
+
+        <br><br>
+
+        <input type="checkbox" name="Aceite" value="Sim">
+        Aceite os termos de uso do site
+
+        <br><br>
+
+        <!-- Radio permite escolher apenas uma opção -->
+
+        <input type="radio" name="Genero" value="F">
+        Feminino
+
+        <input type="radio" name="Genero" value="M">
+        Masculino
+
+        <br><br>
+
+        <input type="file" name="Foto-de-Perfil">
+
+        <br><br>
+
+        <select name="Assunto">
+
+            <option value="Duvida">Dúvida</option>
+            <option value="Elogio">Elogio</option>
+            <option value="Reclamacao">Reclamação</option>
+
+        </select>
+
+        <br><br>
+
+        <textarea
+            name="Mensagem"
+            rows="2"
+            placeholder="Escreva sua mensagem"></textarea>
+
+        <br><br>
+
+        <label for="campo-nome">
+            Nome Completo:
+        </label>
+
+        <input
+            type="text"
+            id="campo-nome"
+            name="nome_completo"
+            placeholder="Escreva o seu nome">
+
+        <br><br>
+
+        <label for="campo-aceite">
+            Aceite os Termos de uso
+        </label>
+
+        <input
+            type="checkbox"
+            id="campo-aceite"
+            name="Aceite"
+            value="sim">
+
+        <br><br>
+
+        <button type="submit">
+            Enviar
+        </button>
+
+    </form>
+
+    <script>
+
+        const Formulario = document.querySelector("#form-Formulario");
+
+        Formulario.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const confirmou = confirm("Deseja realmente enviar?");
+
+            if (confirmou) {
+
+                alert("Mensagem enviada com Sucesso!");
+
+                Formulario.reset();
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>

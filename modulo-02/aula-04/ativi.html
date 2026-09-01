@@ -1,0 +1,35 @@
+<form id="form-Formulario">
+
+        <h1 align="center">Conta Matematica</h1>
+
+        <hr>
+
+        <input type="text" name="nome" placeholder="Seu nome">
+        <input type="number" name="Conta" placeholder="Raiz de 144?">
+
+        <button type="submit">
+            Enviar
+        </button>
+</form>
+        
+        <script>
+
+        const Formulario = document.querySelector("#form-Formulario");
+
+        Formulario.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const confirmou = confirm("Deseja realmente enviar?");
+
+            if (confirmou) {
+
+                alert("Mensagem enviada com Sucesso!");
+
+                Formulario.reset();
+
+            }
+
+        });
+
+    </script>
