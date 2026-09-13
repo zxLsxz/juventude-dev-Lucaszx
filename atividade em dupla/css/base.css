@@ -1,5 +1,5 @@
 body { 
-    background: #5fb8ec;
+    background: white;
     font-famly: Arial;
     width: 680px;
     padding: 50px;
@@ -18,7 +18,7 @@ font-size: 20px; }
 .Atividade { font-family: arial;
 font-size: 20px;}
 
-.cartao { background-color: white;}
+.cartao { background-color:rgb(54, 130, 243);}
 
 #titulo { color: rgb(204, 10, 230);}
 
