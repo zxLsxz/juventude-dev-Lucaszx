@@ -37,7 +37,7 @@ p { color: blue; }
 html { font-size: 16px;}
 
 }
-#titulo { font-siz: 2rem; } /* 32px */
+#titulo { font-size: 2rem; } /* 32px */
 .cartao {
     width: 90%;
     max-width: 420px;

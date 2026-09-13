@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel=""stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/componentes.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
-
-    <h1 align="center">Conexão Criativa</h1>
+   
+    <h1 align="center" id="titulo">Conexão Criativa</h1>
     <hr>
     <h2 class="descricao">Descrição do Evento</h2>
     <p id="descricao">Um encontro de arte, tecnologia e criatividade que reúne jovens artistas, designers, fotógrafos e criadores digitais para apresentar seus trabalhos, participar de oficinas e trocar experiências.</p>
@@ -28,10 +28,66 @@
     <hr>
 
     <h3>Galeria de Imagens</h3>
-    <img src="https://images.openai.com/static-rsc-4/8CFNq3udKoNWA1_gpSxycLswrySD1IPEgAUGuW2CnK9HyQHZWJRnEVT61FN4mjY0CufGkmKlDLktb90N7Ta0iypclXjT3fW5aZYRCgCsicPSDb8F_LJ4perlZ9acCJcPahODY9ngcekO4nbv9OB9onHLBwDrPvxqG6nfZD2ur_GhBqkaorZ4R-lWGOJYI7T8?purpose=fullsize" alt="Demonstração do Evento" width="600" height="400" class>
+    <img src="https://images.openai.com/static-rsc-4/8CFNq3udKoNWA1_gpSxycLswrySD1IPEgAUGuW2CnK9HyQHZWJRnEVT61FN4mjY0CufGkmKlDLktb90N7Ta0iypclXjT3fW5aZYRCgCsicPSDb8F_LJ4perlZ9acCJcPahODY9ngcekO4nbv9OB9onHLBwDrPvxqG6nfZD2ur_GhBqkaorZ4R-lWGOJYI7T8?purpose=fullsize" alt="Demonstração do Evento" width="400" height="300" class>
 
-    <img src="https://www.peerspace.com/resources/wp-content/uploads/portland-event-projection-mapping-1-1024x683.jpg" alt="Demonstração do Evento" width="600" height="400">
+    <img src="https://www.peerspace.com/resources/wp-content/uploads/portland-event-projection-mapping-1-1024x683.jpg" alt="Demonstração do Evento" width="400" height="300">
+<hr>
+    <h4 class="Sobre">Sobre o Evento</h4>
+    <p>O Conexão Criativa busca incetivar a criatividade, a arte e a tecnologia, proporcionando um espaço para jovens compartilharem suas ideias e trabalhos.</p>
+    <h5 class="Atividade">Atividades do Evento:</h5>
+     <ul class="Atividade"></ul>
+            <li>Oficinas de arte e Design</li>
+            <li>Exposição de trabalhos</li>
+            <li>Fotografia</li>
+            <li>Tecnologia e criatividade</li>
+            <li>Palestras</li>
+    <hr>
 
-     
+<form id="Form-Formulario">
+
+    <h4>Fale conosco para participar do evento preenchendo o formulário abaixo:</h4>
+
+    <br>
+
+    <input type="text" name="nome" placeholder="Seu nome:">
+
+    <br><br>
+
+    <input type="email" name="email" placeholder="Seu email:">
+
+    <br><br>
+
+    <input type="number" name="telefone" placeholder="Seu Telefone:">
+
+    <br><br>
+
+    <textarea name="Mensagem" placeholder="Mensagem"></textarea>
+
+    <br><br>
+
+ <button type="submit">Enviar</button>
+
+<script>
+
+    const formulario = document.querySelector("#Form-Formulario");
+
+    formulario.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        const confirmou = confirm("Deseja realmente enviar?");
+
+        if (confirmou) {
+
+            alert("Mensagem enviada com Sucesso!");
+
+            formulario.reset();
+
+        }
+
+    });
+
+</script>
+
 </body>
 </html>

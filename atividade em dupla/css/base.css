@@ -1,0 +1,27 @@
+body { 
+    background: #5fb8ec;
+    font-famly: Arial;
+    width: 680px;
+    padding: 50px;
+    border: 10px solid #93c5fd;
+    margin: 15px;
+    height: 1800px;
+    box-sizing: border-box;
+    border-radius: 20px;
+   
+}
+    
+.Sobre { font-family: arial;
+font-size: 20px; }
+
+
+.Atividade { font-family: arial;
+font-size: 20px;}
+
+.cartao { background-color: white;}
+
+#titulo { color: rgb(204, 10, 230);}
+
+
+    
+    
