@@ -1,7 +1,10 @@
 body {
     background-color: #5fb8ec;
     font-family: Arial, sans-serif;
+
     padding: 2rem 1rem;
+
+    min-height: 100vh;
 }
 
 #titulo {
@@ -23,10 +26,4 @@ body {
 
 li {
     margin-bottom: 0.5rem;
-}
-
-input,
-textarea {
-    font-family: Arial, sans-serif;
-    font-size: 1rem;
 }
