@@ -1,0 +1,150 @@
+/* Cartão principal */
+
+.cartao {
+    width: 90%;
+    max-width: 680px;
+
+    margin: 0 auto;
+    padding: 2rem;
+
+    border: 1px solid #dbeafe;
+    border-radius: 20px;
+
+    background: linear-gradient(135deg, #eff6ff, #ede9fe);
+
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.15);
+}
+
+
+/* Informações */
+
+.informacoes {
+    background-color: #eef6ff;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+
+/* Galeria */
+
+.galeria {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.galeria img {
+    width: 48%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.galeria img:hover {
+    transform: scale(1.02);
+}
+
+
+/* Botão "Ver programação" */
+
+.botao {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+
+    background-color: #7c3aed;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    margin-top: 0.5rem;
+}
+
+.botao:hover {
+    background-color: #5b21b6;
+}
+
+
+/* Seção de programação */
+
+.projeto {
+    margin-top: 1.5rem;
+    padding: 1rem;
+
+    border: 1px solid #dbeafe;
+    border-radius: 10px;
+    background-color: #eef6ff;
+}
+
+
+/* Formulário */
+
+#Form-Formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+
+    box-sizing: border-box;
+
+    border: 1px solid #aaa;
+    border-radius: 8px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+
+/* Botão enviar */
+
+button {
+    width: 120px;
+    padding: 0.75rem;
+
+    background-color: #7c3aed;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5b21b6;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 1rem 0.5rem;
+    }
+
+    .cartao {
+        width: 100%;
+        padding: 1.25rem;
+    }
+
+    #titulo {
+        font-size: 1.75rem;
+    }
+
+    .galeria {
+        flex-direction: column;
+    }
+
+    .galeria img {
+        width: 100%;
+        height: auto;
+    }
+}
