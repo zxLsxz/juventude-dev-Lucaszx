@@ -1,129 +1,32 @@
 body {
     background-color: #5fb8ec;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 30px 15px;
+    padding: 2rem 1rem;
 }
 
-/* Cartão principal */
-.cartao {
-    background-color: white;
-    max-width: 680px;
-    margin: 0 auto;
-    padding: 30px;
-    box-sizing: border-box;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Título */
 #titulo {
     text-align: center;
     color: rgb(204, 10, 230);
-    font-size: 32px;
+    font-size: 2rem;
 }
 
-/* Títulos das seções */
 .descricao,
 .Sobre,
 .Atividade {
     color: #7c3aed;
 }
 
-/* Textos */
 #descricao {
     line-height: 1.5;
+    font-size: 1rem;
 }
 
-.informacoes {
-    background-color: #eef6ff;
-    padding: 10px 15px;
-    border-radius: 10px;
-}
-
-/* Listas */
 li {
-    margin-bottom: 8px;
-}
-
-/* Galeria */
-.galeria {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-
-.galeria img {
-    width: 48%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-/* Efeito nas imagens */
-.galeria img:hover {
-    transform: scale(1.02);
-}
-
-/* Formulário */
-#Form-Formulario {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    margin-bottom: 0.5rem;
 }
 
 input,
 textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #aaa;
-    border-radius: 8px;
     font-family: Arial, sans-serif;
-}
-
-textarea {
-    height: 100px;
-    resize: vertical;
-}
-
-/* Botão */
-button {
-    width: 120px;
-    padding: 10px;
-    background-color: #7c3aed;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-/* Efeito do botão */
-button:hover {
-    background-color: #5b21b6;
-}
-
-/* Responsividade */
-@media (max-width: 600px) {
-
-    body {
-        padding: 15px 8px;
-    }
-
-    .cartao {
-        padding: 20px;
-    }
-
-    #titulo {
-        font-size: 26px;
-    }
-
-    .galeria {
-        flex-direction: column;
-    }
-
-    .galeria img {
-        width: 100%;
-        height: auto;
-    }
+    font-size: 1rem;
 }
