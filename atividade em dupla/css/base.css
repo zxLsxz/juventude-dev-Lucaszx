@@ -1,22 +1,29 @@
 body {
     background-color: #5fb8ec;
     font-family: Arial, sans-serif;
-    padding: 30px 15px;
+
+    padding: 2rem 1rem;
+
+    min-height: 100vh;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-    margin-top: 0;
+#titulo {
+    text-align: center;
+    color: rgb(204, 10, 230);
+    font-size: 2rem;
 }
 
-p,
-li,
-input,
-textarea,
-button {
+.descricao,
+.Sobre,
+.Atividade {
+    color: #7c3aed;
+}
+
+#descricao {
+    line-height: 1.5;
     font-size: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
 }
