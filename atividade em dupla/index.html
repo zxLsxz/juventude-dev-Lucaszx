@@ -7,9 +7,9 @@
 
     <title>Conexão Criativa</title>
 
-    <link rel="stylesheet" href="css/componentes.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
 </head>
 
 <body>
@@ -29,15 +29,9 @@
         </p>
 
         <div class="informacoes">
-<<<<<<< HEAD
             <p> <strong>Data:</strong> 07 de novembro de 2026</p>
             <p> <strong>Horário:</strong> 14:00 às 21:00</p>
             <p> <strong>Local:</strong> Centro Cultural de Cruz das Almas — Cruz das Almas, BA</p>
-=======
-            <p>📅 <strong>Data:</strong> 07 de novembro de 2026</p>
-            <p>🕐 <strong>Horário:</strong> 14:00 às 21:00</p>
-            <p>📍 <strong>Local:</strong> Centro Cultural de Cruz das Almas — Cruz das Almas, BA</p>
->>>>>>> a1aa717cb5a447e13447fc306da631c6a45943ed
         </div>
 
         <hr>
@@ -84,6 +78,25 @@
             <li>Palestras</li>
         </ul>
 
+        <a class="botao" href="#programacao">Ver programação</a>
+
+        <hr>
+
+        <section id="programacao" class="projeto">
+
+            <h4>Programação</h4>
+
+            <p>Confira algumas das atividades do evento:</p>
+
+            <ul>
+                <li>14:00 — Abertura</li>
+                <li>15:00 — Oficinas de arte e Design</li>
+                <li>17:00 — Exposição de trabalhos</li>
+                <li>19:00 — Palestras</li>
+            </ul>
+
+        </section>
+
         <hr>
 
         <h4>Como participar?</h4>
@@ -114,28 +127,5 @@
 
     </div>
 
-    <script>
-
-        const formulario = document.querySelector("#Form-Formulario");
-
-        formulario.addEventListener("submit", function (event) {
-
-            event.preventDefault();
-
-            const confirmou = confirm("Deseja realmente enviar?");
-
-            if (confirmou) {
-
-                alert("Mensagem enviada com sucesso!");
-
-                formulario.reset();
-
-            }
-
-        });
-
-    </script>
-
 </body>
-
 </html>
