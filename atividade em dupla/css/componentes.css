@@ -1,35 +1,56 @@
 /* Cartão principal */
-
 .cartao {
-    width: 90%;
+    width: 100%;
     max-width: 680px;
-
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1.875rem;
 
-    border: 1px solid #dbeafe;
+    background: linear-gradient(135deg, #ffffff, #f8f5ff);
+
+    border: 1px solid #e5e7eb;
     border-radius: 20px;
-
-    background: linear-gradient(135deg, white, #f5f3ff);
-
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Título */
+#titulo {
+    text-align: center;
+    color: rgb(204, 10, 230);
+    font-size: 2rem;
+}
+
+/* Títulos das seções */
+.descricao,
+.Sobre,
+.Atividade {
+    color: #7c3aed;
+}
+
+/* Textos */
+#descricao {
+    line-height: 1.5;
+}
 
 /* Informações */
-
 .informacoes {
     background-color: #eef6ff;
-    padding: 1rem;
+    padding: 0.625rem 0.9375rem;
     border-radius: 10px;
 }
 
+.informacoes strong {
+    color: #5b21b6;
+}
+
+/* Listas */
+li {
+    margin-bottom: 8px;
+}
 
 /* Galeria */
-
 .galeria {
     display: flex;
-    gap: 1rem;
+    gap: 10px;
     justify-content: center;
 }
 
@@ -38,65 +59,38 @@
     height: 220px;
     object-fit: cover;
     border-radius: 12px;
+    border: 1px solid #ddd;
+    transition: transform 0.2s;
 }
 
+/* Efeito nas imagens */
 .galeria img:hover {
     transform: scale(1.02);
 }
 
-
-/* Link */
-
-.botao {
-    display: inline-block;
-
-    padding: 0.75rem 1.25rem;
-
-    background-color: #7c3aed;
-    color: white;
-
-    text-decoration: none;
-    border-radius: 8px;
-
-    margin-top: 0.5rem;
-}
-
-.botao:hover {
-    background-color: #5b21b6;
-}
-
-
-/* Programação */
-
+/* Seção do projeto */
 .projeto {
     margin-top: 1.5rem;
     padding: 1rem;
-
-    border: 1px solid #dbeafe;
-    border-radius: 10px;
-
-    background-color: #eef6ff;
+    border: 1px solid #c4b5fd;
+    border-radius: 12px;
+    background-color: #f5f3ff;
 }
 
-
 /* Formulário */
-
 #Form-Formulario {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 12px;
 }
 
 input,
 textarea {
     width: 100%;
-    padding: 0.75rem;
-
+    padding: 10px;
     border: 1px solid #aaa;
     border-radius: 8px;
-
     font-family: Arial, sans-serif;
-    font-size: 1rem;
 }
 
 textarea {
@@ -104,42 +98,35 @@ textarea {
     resize: vertical;
 }
 
-
 /* Botão */
-
 button {
     width: 120px;
-    padding: 0.75rem;
-
+    padding: 10px;
     background-color: #7c3aed;
     color: white;
-
     border: none;
     border-radius: 8px;
-
     cursor: pointer;
 }
 
+/* Efeito do botão */
 button:hover {
     background-color: #5b21b6;
 }
 
-
 /* Responsividade */
-
 @media (max-width: 600px) {
 
     body {
-        padding: 1rem 0.5rem;
+        padding: 15px 8px;
     }
 
     .cartao {
-        width: 100%;
         padding: 1.25rem;
     }
 
     #titulo {
-        font-size: 1.75rem;
+        font-size: 1.625rem;
     }
 
     .galeria {
@@ -149,5 +136,6 @@ button:hover {
     .galeria img {
         width: 100%;
         height: auto;
+        aspect-ratio: 16 / 10;
     }
 }
