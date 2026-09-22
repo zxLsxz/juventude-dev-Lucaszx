@@ -1,0 +1,33 @@
+main { 
+    display: flex;
+    justify-content: space-between; 
+    padding-right: 200px;
+}
+
+.botao {
+    position: fixed;      
+    border-radius: 20px; 
+    right: 70px;
+    width: 100px;        
+    padding: 1.90rem;
+    top: 10px;
+
+}
+
+.box1 {
+    width: 120px;
+    padding: 1.90rem;
+    
+    background-color: #7c3aed;
+    color: white;
+    border-radius: 18px; 
+}
+ 
+.caixa2 {
+    width: 120px;
+    padding: 1.90rem;
+    background-color: #7c3aed;
+    color: white;
+    border-radius: 18px; 
+    
+}
