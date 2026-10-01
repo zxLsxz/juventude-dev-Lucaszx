@@ -1,0 +1,45 @@
+body {
+    background-color: rgba(45, 57, 73);
+    font-family: Arial, sans-serif;
+    padding: 2rem 1rem;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    display: contents;
+    justify-content: space-between;
+    align-content: center;
+    
+}
+
+.caixa li {
+    width: 450px;
+    padding: 20px;
+    background-color: rgb(31, 46, 66);
+    color: white;
+    border-radius: 18px;
+    margin-left: auto;
+    margin-top: 20px;
+    
+    
+}
+
+.caixa ul {
+    list-style-type: none;
+    
+}
+
+
+.bio {
+    color: rgb(17, 21, 26);
+}
+
+.titulo {
+    color: white;
+    
+}
+
+.titulo2 {
+    color: white;
+}
