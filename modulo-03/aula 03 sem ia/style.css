@@ -1,0 +1,70 @@
+
+body {
+    padding-bottom: 100px;
+}
+
+
+
+.site-header {
+	background-color: #fffaf2;
+	border-bottom: 1px solid #eadfd2;
+}
+
+.titulo {
+	margin-bottom: 1rem;
+	color: #293b35;
+}
+
+.section-nav-link.active {
+	border-color: #0a58ca;
+	background-color: #0d6efd;
+	color: #fff;
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+}
+
+.contato-card {
+	border-color: #eadfd2;
+	background-color: #fffdf9;
+}
+
+.site-footer {
+	margin-top: 1rem;
+	border-top: 1px solid #eadfd2;
+	background-color: #fffaf2;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-brand {
+	color: #293b35;
+	font-weight: 700;
+}
+
+.produtos,
+#contato,
+#sobre {
+	scroll-margin-top: 1rem;
+}
+
+.produto-card {
+	overflow: hidden;
+	border: 1px solid #eadfd2;
+	border-radius: 0.5rem;
+	background-color: #fffdf9;
+	box-shadow: 0 0.35rem 1rem rgba(41, 59, 53, 0.1);
+}
+
+.produto-imagem {
+	width: 100%;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+}
+
+.nome-bolo {
+	margin: 0;
+	color: #293b35;
+	font-size: 1.25rem;
+	text-align: center;
+}

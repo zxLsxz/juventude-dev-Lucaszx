@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Conheça a Doce Afeto, uma loja de bolos feitos com carinho.">
+    <title>Doce Afeto | Bolos feitos com carinho</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+
+
+    <header class="site-header sticky-top">
+      <nav class="navbar navbar-expand-md" aria-label="Navegação principal">
+        <div class="container">
+          <a class="navbar-brand" href="#home" aria-label="Doce Afeto, página inicial">Doce <span>Afeto</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu-principal">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link section-nav-link" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link section-nav-link" href="#contato">Contato</a></li>
+              <li class="nav-item"><a class="nav-link section-nav-link" href="#sobre">Sobre</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container py-5">
+      <div class="intro mb-4">
+        <p class="eyebrow mb-2">Feito à mão, feito com carinho</p>
+        <h1>Um pedacinho de felicidade em cada fatia.</h1>
+      </div>
+
+      <div class="row g-4">
+        <section class="col-12" id="home" aria-labelledby="titulo-home">
+          <article class="card h-100">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85" class="card-img-top" alt="Bolo decorado com frutas vermelhas">
+            <div class="card-body d-flex flex-column">
+              <p class="eyebrow">Bem-vindo à loja</p>
+              <h2 class="card-title" id="titulo-home">Bolos para celebrar</h2>
+              <p class="card-text">Receitas caseiras, ingredientes fresquinhos e aquele sabor que deixa qualquer dia mais especial.</p>
+              <a href="#contato" class="btn btn-bakery mt-auto align-self-start">Faça seu pedido</a>
+            </div>
+          </article>
+        </section>
+
+        <section class="col-12" id="contato" aria-labelledby="titulo-contato">
+          <article class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <p class="eyebrow">Vamos conversar</p>
+              <h2 class="card-title" id="titulo-contato">Contato</h2>
+              <p class="card-text">Conte pra gente qual delícia vai deixar sua comemoração ainda melhor.</p>
+              <form id="form-contato" class="mt-2">
+                <div class="mb-3">
+                  <label for="nome" class="form-label">Seu nome</label>
+                  <input type="text" class="form-control" id="nome" name="nome" autocomplete="name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Seu e-mail</label>
+                  <input type="email" class="form-control" id="email" name="email" autocomplete="email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="mensagem" class="form-label">O que você gostaria de pedir?</label>
+                  <textarea class="form-control" id="mensagem" name="mensagem" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-bakery">Enviar mensagem</button>
+              </form>
+              <p id="aviso-form" class="form-message mt-3 mb-0" role="status" aria-live="polite"></p>
+            </div>
+          </article>
+        </section>
+
+        <section class="col-12" id="sobre" aria-labelledby="titulo-sobre">
+          <article class="card h-100 about-card">
+            <div class="card-body d-flex flex-column">
+              <p class="eyebrow">Nossa história</p>
+              <h2 class="card-title" id="titulo-sobre">Sobre a Doce Afeto</h2>
+              <p class="card-text">A Doce Afeto nasceu na cozinha de casa, com receitas de família e vontade de compartilhar momentos gostosos. Cada bolo é preparado em pequenos lotes, com cuidado em cada detalhe.</p>
+              <div class="about-note mt-auto">
+                <span aria-hidden="true">✿</span>
+                <p class="mb-0">Sabor de casa, carinho de festa.</p>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
+        <a class="footer-brand" href="#home">Doce <span>Afeto</span></a>
+        <nav aria-label="Navegação do rodapé">
+          <ul class="footer-nav list-unstyled d-flex gap-4 mb-0">
+            <li><a class="section-nav-link" href="#home">Home</a></li>
+            <li><a class="section-nav-link" href="#contato">Contato</a></li>
+            <li><a class="section-nav-link" href="#sobre">Sobre</a></li>
+          </ul>
+        </nav>
+        <small>© 2026 Doce Afeto</small>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+
+
+
+
+
+
+
+
+
+    <script>
+      const sectionIds = ['home', 'contato', 'sobre'];
+      const pageLinks = document.querySelectorAll('.section-nav-link');
+
+      function updateActivePage() {
+        const requestedId = window.location.hash.slice(1);
+        const activeId = sectionIds.includes(requestedId) ? requestedId : 'home';
+
+        pageLinks.forEach((link) => {
+          const isActive = link.hash === `#${activeId}`;
+          link.classList.toggle('active', isActive);
+          if (isActive) {
+            link.setAttribute('aria-current', 'page');
+          } else {
+            link.removeAttribute('aria-current');
+          }
+        });
+      }
+
+      window.addEventListener('hashchange', updateActivePage);
+      updateActivePage();
+
+      document.querySelector('#form-contato').addEventListener('submit', (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.currentTarget);
+        const subject = encodeURIComponent(`Pedido de ${formData.get('nome')}`);
+        const body = encodeURIComponent(
+          `Nome: ${formData.get('nome')}\nE-mail: ${formData.get('email')}\n\n${formData.get('mensagem')}`
+        );
+
+        document.querySelector('#aviso-form').textContent = 'Abrindo seu aplicativo de e-mail para enviar a mensagem.';
+        window.location.href = `mailto:contato@doceafeto.com?subject=${subject}&body=${body}`;
+      });
+    </script>
+  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </html>
