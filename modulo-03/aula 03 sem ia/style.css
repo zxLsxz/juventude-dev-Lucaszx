@@ -60,6 +60,7 @@ body {
 	width: 100%;
 	aspect-ratio: 4 / 3;
 	object-fit: cover;
+	height: 
 }
 
 .nome-bolo {
@@ -67,4 +68,36 @@ body {
 	color: #293b35;
 	font-size: 1.25rem;
 	text-align: center;
+}
+
+.depoimentos-carousel {
+	border: 1px solid #eadfd2;
+	border-radius: 0.5rem;
+	background-color: #fffdf9;
+	box-shadow: 0 0.35rem 1rem rgba(41, 59, 53, 0.1);
+}
+
+.depoimento {
+	display: flex;
+	min-height: 12rem;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 3rem 4rem 4rem;
+	color: #293b35;
+	text-align: center;
+}
+
+.depoimento blockquote {
+	font-size: 1.15rem;
+	font-style: italic;
+}
+
+.depoimentos-carousel .carousel-control-prev-icon,
+.depoimentos-carousel .carousel-control-next-icon {
+	filter: invert(1) grayscale(100);
+}
+
+.depoimentos-carousel .carousel-indicators [data-bs-target] {
+	background-color: #293b35;
 }

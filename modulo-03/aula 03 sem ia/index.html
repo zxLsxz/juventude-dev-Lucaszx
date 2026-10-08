@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 
@@ -18,7 +19,9 @@
             <nav aria-label="Navegação principal">
                 <ul class="Botoes list-unstyled d-flex justify-content-center flex-wrap gap-2">
                     <li><a href="#home" class="btn btn-outline-primary section-nav-link">Home</a></li>
-                    <li><a href="#contato" class="btn btn-outline-primary section-nav-link">Contato</a></li>
+                    <li><a h
+                        
+                        ref="#contato" class="btn btn-outline-primary section-nav-link">Contato</a></li>
                     <li><a href="#sobre" class="btn btn-outline-primary section-nav-link">Sobre</a></li>
                 </ul>
             </nav>
@@ -52,6 +55,7 @@
                 </div>
             </div>
         </section>
+
 
         <section class="container py-4" id="contato" aria-labelledby="titulo-contato">
             <article class="card contato-card">
@@ -87,6 +91,46 @@
             <h2 id="titulo-sobre">Sobre a loja</h2>
             <p>Preparamos bolos confeitados e caseiros com carinho para deixar seus momentos ainda mais gostosos.</p>
         </section>
+
+         <section class="container py-4" aria-labelledby="titulo-depoimentos">
+            <h2 id="titulo-depoimentos">Depoimentos</h2>
+            <div id="depoimentos" class="carousel slide depoimentos-carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#depoimentos" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Depoimento de Ana"></button>
+                    <button type="button" data-bs-target="#depoimentos" data-bs-slide-to="1"
+                        aria-label="Depoimento de João"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="depoimento">
+                            <img src="https://www.docemeldoces.com/wp-content/uploads/galeria-bolo-chocolate_88.jpg" 
+                            alt="Bolo de chocolate confeitado" class="card-img-top produto-imagem">
+                            <blockquote class="mb-2">“O bolo de chocolate estava delicioso e chegou fresquinho!”</blockquote>
+                            <p class="mb-0">Ana</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="depoimento">
+                            <img src="https://www.receitamaneira.com.br/wp-content/uploads/2025/05/Bolo-caseiro-simples.jpg"
+                            alt="Bolo caseiro simples" class="card-img-top produto-imagem">
+                            <blockquote class="mb-2">“Adorei o bolo caseiro. Com certeza vou pedir novamente!”</blockquote>
+                            <p class="mb-0">João</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#depoimentos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Depoimento anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#depoimentos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo depoimento</span>
+                </button>
+            </div>
+        </section>
+
+
     </main>
 
     <footer class="site-footer py-4">
@@ -134,10 +178,9 @@
             document.querySelector('#status-contato').textContent = 'O WhatsApp foi aberto com sua mensagem. Revise e envie por lá.';
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
 </body>
-
-
-
-
-
 </html>
