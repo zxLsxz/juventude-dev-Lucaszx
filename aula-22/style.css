@@ -1,0 +1,24 @@
+body {
+	margin: 0;
+	padding: 24px;
+	font-family: Arial, sans-serif;
+}
+
+footer {
+	padding: 20px;
+	border: 2px solid #315c50;
+	border-radius: 16px;
+	background-color: #e8f1ed;
+	color: #24483e;
+	text-align: center;
+}
+
+button {
+	margin: 4px;
+	padding: 8px 14px;
+	border: 1px solid #315c50;
+	border-radius: 8px;
+	background-color: #315c50;
+	color: white;
+	cursor: pointer;
+}

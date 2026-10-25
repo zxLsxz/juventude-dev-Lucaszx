@@ -1,0 +1,16 @@
+.tabela {
+    background-color: #bebaec;
+    width: 50%;
+}
+
+.rodape {
+    width: 80%;
+    margin: 10px auto 0;
+    padding: 10px;
+    border: 2px solid #315c50;
+    border-radius: 16px;
+    background-color: #e8f1ed;
+    color: #24483e;
+    text-align: center;
+    
+}
